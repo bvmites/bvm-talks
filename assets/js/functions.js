@@ -289,4 +289,29 @@ $(document).ready(function () {
       updateNavs(newHash);
     }
   };
+
+  var navigationUp = $('.fixed-navigation-arrow--up');
+  var navigationDown = $('.fixed-navigation-arrow--down');
+
+  navigationUp.click(decrementHash);
+  navigationDown.click(incrementHash);
+
+  function incrementHash() {
+    var max = $('.side-nav li').parent().children().length;
+    var hash = location.hash;
+    var current = Number(hash.slice(hash.lastIndexOf('#')).slice(1));
+    if(current + 1 < max) {
+      location.hash = current + 1;
+      console.log(location.hash);
+    }
+  }
+
+  function decrementHash() {
+    var hash = location.hash;
+    var current = Number(hash.slice(hash.lastIndexOf('#')).slice(1));
+    if(current - 1 > -1) {
+      location.hash = current - 1;
+      console.log(location.hash);
+    }
+  }
 });

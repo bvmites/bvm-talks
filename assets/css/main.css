@@ -398,6 +398,27 @@ body {
       .header--cta {
         display: none; } }
 
+.fixed-navigation-arrow {
+  transform: rotate(90deg);
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #282828;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 80%;
+  right: 24px; }
+  .fixed-navigation-arrow--up {
+    top: 72%;
+    transform: rotate(-90deg); }
+  .fixed-navigation-arrow svg {
+    width: 20px;
+    fill: #fff; }
+
 .side-nav {
   position: relative;
   display: flex;
