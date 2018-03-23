@@ -433,23 +433,23 @@ body {
       font-size: 14px;
       font-weight: 300; }
   .side-nav li:nth-child(1)::before {
-    content: "01"; }
+    content: "Home"; }
   .side-nav li:nth-child(2)::before {
-    content: "02"; }
+    content: "Speakers"; }
   .side-nav li:nth-child(3)::before {
-    content: "03"; }
+    content: "Speaker 1"; }
   .side-nav li:nth-child(4)::before {
-    content: "04"; }
+    content: "Speaker 2"; }
   .side-nav li:nth-child(5)::before {
-    content: "05"; }
+    content: "Speaker 3"; }
   .side-nav li:nth-child(6)::before {
-    content: "06"; }
+    content: "Speaker 4"; }
   .side-nav li:nth-child(7)::before {
-    content: "07"; }
+    content: "Speaker 5"; }
   .side-nav li:nth-child(8)::before {
-    content: "08"; }
+    content: "About"; }
   .side-nav li:nth-child(9)::before {
-    content: "09"; }
+    content: "Contact"; }
   .side-nav li:nth-child(10)::before {
     content: "10"; }
   .side-nav li.is-active {
@@ -460,6 +460,7 @@ body {
       visibility: visible;
       transition: opacity 0.1s ease-in-out; }
     .side-nav li.is-active::before {
+      display: none;
       left: -33px;
       color: #fff; }
 
