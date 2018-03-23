@@ -286,6 +286,7 @@ $(document).ready(function () {
     var lastItem = totalItems - 1;
     if (newHash < totalItems) {
       updateContent(oldHash, newHash, lastItem);
+      updateNavs(newHash);
     }
   };
 });
