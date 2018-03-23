@@ -774,12 +774,12 @@ body {
         height: 10px;
         background-color: #0f33ff; }
     .about--banner a {
-      padding: 5px 17px 5px 0;
+      padding: 5px 17px 5px 5px;
       text-decoration: none;
       color: #fff;
       font-weight: 700;
       text-transform: uppercase;
-      background-color: transparent; }
+      background-color: #0f33ff; }
       .about--banner a:hover svg {
         left: 10px; }
       .about--banner a svg {
@@ -845,7 +845,7 @@ body {
         left: 163px; }
     .about--banner img {
       position: absolute;
-      top: 100%;
+      top: 80%;
       transform: scale(0.8);
       width: 315px; } }
 @media (max-width: 600px) {
@@ -857,6 +857,7 @@ body {
       left: 310px; }
     .about--banner h2 {
       margin-top: 0;
+      margin-bottom: 0;
       font-size: 32px; }
       .about--banner h2::before {
         top: 43px;
@@ -867,7 +868,8 @@ body {
     .about--banner h3 {
       font-size: 12px; }
     .about--banner img {
-      display: block; }
+      display: block;
+      right: auto; }
   .about--options {
     display: none; } }
 .contact {
